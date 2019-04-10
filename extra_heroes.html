@@ -19,8 +19,41 @@
 		.heroicon:hover ~ .herohide {display: block; height: 510px; width: 380px; background-color: rgb(0, 0, 0); z-index: 1; }
 		.heroicon:focus ~ .herohide {display: block; height: 510px; width: 380px; background-color: rgb(0, 0, 0); }
 	</style>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script>
+		$(function() {
+			var canvas = document.getElementById("myCanvas");
+			if (canvas.getContext){
+				var context = canvas.getContext("2d");
+				context.beginPath();
+				context.moveTo(380, 120); context.lineTo(380, 160); context.lineTo(380, 200); context.lineTo(420, 240); context.lineTo(470, 200);
+				context.lineTo(500, 160); context.lineTo(500, 120); context.moveTo(470, 200); context.lineTo(440, 160); context.lineTo(460, 120);
+				context.moveTo(440, 160); context.lineTo(420, 120); context.moveTo(420, 240); context.lineTo(500, 280); context.lineTo(570, 240);
+				context.lineTo(540, 200); context.lineTo(540, 160); context.moveTo(570, 240); context.lineTo(600, 200); context.lineTo(580, 160);
+				context.moveTo(600, 200); context.lineTo(620, 160); context.moveTo(500, 280); context.lineTo(410, 320); context.lineTo(320, 360);
+				context.lineTo(130, 400); context.lineTo(100, 440); context.lineTo(60, 480); context.lineTo(60, 520); context.moveTo(100, 440);
+				context.lineTo(130, 480); context.lineTo(100, 520); context.lineTo(100, 560); context.moveTo(130, 400); context.lineTo(160, 440);
+				context.lineTo(130, 480); context.lineTo(160, 520); context.lineTo(140, 560); context.moveTo(160, 440); context.lineTo(190, 480);
+				context.lineTo(160, 520); context.lineTo(180, 560); context.moveTo(190, 480); context.lineTo(220, 520); context.lineTo(220, 560);
+				context.moveTo(320, 360); context.lineTo(520, 400); context.lineTo(440, 440); context.lineTo(360, 480); context.lineTo(310, 520);
+				context.lineTo(280, 560); context.lineTo(260, 600); context.moveTo(280, 560); context.lineTo(300, 600); context.moveTo(310, 520);
+				context.lineTo(340, 560); context.lineTo(340, 600); context.moveTo(360, 480); context.lineTo(400, 520); context.lineTo(380, 560);
+				context.lineTo(380, 600); context.moveTo(400, 520); context.lineTo(420, 560); context.lineTo(420, 600); context.moveTo(440, 440);
+				context.lineTo(510, 480); context.lineTo(480, 520); context.lineTo(460, 560); context.moveTo(480, 520); context.lineTo(500, 560);
+				context.moveTo(510, 480); context.lineTo(540, 520); context.lineTo(540, 560); context.moveTo(520, 400); context.lineTo(600, 440);
+				context.lineTo(580, 480); context.moveTo(600, 440); context.lineTo(620, 480);
+				context.strokeStyle = "white";
+				context.lineWidth = 2;
+				context.stroke();
+			}
+			else {
+				alert('Ваш браузер не поддерживает canvas')
+			}
+		});
+	</script>
 </head>
 <body style="background-color:#EEEEEE"; margin: 0px; padding: 0px; >
+	<canvas id="myCanvas" width="640" height="640" style="position: absolute; background-color:black; "></canvas>
 	<div style="width: 1280px; height: 640; position: relative; z-index: 0; ">
 		<div style="position: absolute; top: 40px; left: 10px; width: 600px; height: 30px; " >
 			<a href="index.html" title="HotE heroes" tabindex="-1" style="position: absolute; top: 0px; left: 0px; outline: 0px white; ">
@@ -798,6 +831,7 @@
 			</div>
 		</div>
 		<div style="position: absolute; top: 300px; left: 390px; width:40px; height:40px; ">
+			<div style="position: absolute; top: 3px; left: 3px; height:34px; width:34px; background-color: black; "></div>
 			<div style="position: absolute; top: 3px; left: 3px; height:34px; width:34px; outline: 2px ridge grey; "></div>
 			<a href="#" class="heroicon" style="position: absolute; top: 4px; left: 4px;">
 			<img src="icons_heroes/BTNVillagerKid.png"; style="width:32px; height:32px; "></a>
@@ -908,6 +942,7 @@
 		</div>
 		<div style="position: absolute; top: 100px; left: 360px; " >
 			<div style="position: absolute; top: 0px; left: 0px; width:40px; height:40px; ">
+				<div style="position: absolute; top: 4px; left: 4px; height:32px; width:32px; background-color: black; "></div>
 				<a href="#" class="heroicon" style="position: absolute; top: 4px; left: 4px;">
 				<img src="icons_heroes/BTNBanditMage.png"; style="width:32px; height:32px; "></a>
 					<div class=herohide style="position: fixed; top: 100px; left: 680px; ">
@@ -1016,6 +1051,7 @@
 					</div>
 			</div>
 			<div style="position: absolute; top: 40px; left: 0px; width:40px; height:40px; ">
+				<div style="position: absolute; top: 4px; left: 4px; height:32px; width:32px; background-color: black; "></div>
 				<a href="#" class="heroicon" style="position: absolute; top: 4px; left: 4px;">
 				<img src="icons_heroes/BTNBanditMage.png"; style="width:32px; height:32px; "></a>
 					<div class=herohide style="position: fixed; top: 100px; left: 680px; ">
@@ -1124,6 +1160,7 @@
 					</div>
 			</div>
 			<div style="position: absolute; top: 80px; left: 0px; width:40px; height:40px; ">
+				<div style="position: absolute; top: 4px; left: 4px; height:32px; width:32px; background-color: black; "></div>
 				<a href="#" class="heroicon" style="position: absolute; top: 4px; left: 4px;">
 				<img src="icons_heroes/BTNBanditMage.png"; style="width:32px; height:32px; "></a>
 					<div class=herohide style="position: fixed; top: 100px; left: 680px; ">
@@ -1232,6 +1269,7 @@
 					</div>
 			</div>
 			<div style="position: absolute; top: 0px; left: 40px; width:40px; height:40px; ">
+				<div style="position: absolute; top: 4px; left: 4px; height:32px; width:32px; background-color: black; "></div>
 				<a href="#" class="heroicon" style="position: absolute; top: 4px; left: 4px;">
 				<img src="icons_heroes/BTNNecromancer.png"; style="width:32px; height:32px; "></a>
 					<div class=herohide style="position: fixed; top: 100px; left: 680px; ">
@@ -1340,6 +1378,7 @@
 					</div>
 			</div>
 			<div style="position: absolute; top: 120px; left: 40px; width:40px; height:40px; ">
+				<div style="position: absolute; top: 4px; left: 4px; height:32px; width:32px; background-color: black; "></div>
 				<a href="#" class="heroicon" style="position: absolute; top: 4px; left: 4px;">
 				<img src="icons_heroes/BTNBanditMage.png"; style="width:32px; height:32px; "></a>
 					<div class=herohide style="position: fixed; top: 100px; left: 680px; ">
@@ -1448,6 +1487,7 @@
 					</div>
 			</div>
 			<div style="position: absolute; top: 40px; left: 60px; width:40px; height:40px; ">
+				<div style="position: absolute; top: 4px; left: 4px; height:32px; width:32px; background-color: black; "></div>
 				<a href="#" class="heroicon" style="position: absolute; top: 4px; left: 4px;">
 				<img src="icons_heroes/BTNNecromancer.png"; style="width:32px; height:32px; "></a>
 					<div class=herohide style="position: fixed; top: 100px; left: 680px; ">
@@ -1556,6 +1596,7 @@
 					</div>
 			</div>
 			<div style="position: absolute; top: 0px; left: 80px; width:40px; height:40px; ">
+				<div style="position: absolute; top: 4px; left: 4px; height:32px; width:32px; background-color: black; "></div>
 				<a href="#" class="heroicon" style="position: absolute; top: 4px; left: 4px;">
 				<img src="icons_heroes/BTNNecromancer.png"; style="width:32px; height:32px; "></a>
 					<div class=herohide style="position: fixed; top: 100px; left: 680px; ">
@@ -1664,6 +1705,7 @@
 					</div>
 			</div>
 			<div style="position: absolute; top: 80px; left: 90px; width:40px; height:40px; ">
+				<div style="position: absolute; top: 4px; left: 4px; height:32px; width:32px; background-color: black; "></div>
 				<a href="#" class="heroicon" style="position: absolute; top: 4px; left: 4px;">
 				<img src="icons_heroes/BTNBanditMage.png"; style="width:32px; height:32px; "></a>
 					<div class=herohide style="position: fixed; top: 100px; left: 680px; ">
@@ -1772,6 +1814,7 @@
 					</div>
 			</div>
 			<div style="position: absolute; top: 0px; left: 120px; width:40px; height:40px; ">
+				<div style="position: absolute; top: 4px; left: 4px; height:32px; width:32px; background-color: black; "></div>
 				<a href="#" class="heroicon" style="position: absolute; top: 4px; left: 4px;">
 				<img src="icons_heroes/BTNBanditMage.png"; style="width:32px; height:32px; "></a>
 					<div class=herohide style="position: fixed; top: 100px; left: 680px; ">
@@ -1880,6 +1923,7 @@
 					</div>
 			</div>
 			<div style="position: absolute; top: 40px; left: 120px; width:40px; height:40px; ">
+				<div style="position: absolute; top: 4px; left: 4px; height:32px; width:32px; background-color: black; "></div>
 				<a href="#" class="heroicon" style="position: absolute; top: 4px; left: 4px;">
 				<img src="icons_heroes/BTNBanditMage.png"; style="width:32px; height:32px; "></a>
 					<div class=herohide style="position: fixed; top: 100px; left: 680px; ">
@@ -1988,6 +2032,7 @@
 					</div>
 			</div>
 			<div style="position: absolute; top: 160px; left: 120px; width:40px; height:40px; ">
+				<div style="position: absolute; top: 4px; left: 4px; height:32px; width:32px; background-color: black; "></div>
 				<a href="#" class="heroicon" style="position: absolute; top: 4px; left: 4px;">
 				<img src="icons_heroes/BTNVillagerMan1.png"; style="width:32px; height:32px; "></a>
 					<div class=herohide style="position: fixed; top: 100px; left: 680px; ">
@@ -2096,6 +2141,7 @@
 					</div>
 			</div>
 			<div style="position: absolute; top: 40px; left: 160px; width:40px; height:40px; ">
+				<div style="position: absolute; top: 4px; left: 4px; height:32px; width:32px; background-color: black; "></div>
 				<a href="#" class="heroicon" style="position: absolute; top: 4px; left: 4px;">
 				<img src="icons_heroes/BTNPriest.png"; style="width:32px; height:32px; "></a>
 					<div class=herohide style="position: fixed; top: 100px; left: 680px; ">
@@ -2204,6 +2250,7 @@
 					</div>
 			</div>
 			<div style="position: absolute; top: 80px; left: 160px; width:40px; height:40px; ">
+				<div style="position: absolute; top: 4px; left: 4px; height:32px; width:32px; background-color: black; "></div>
 				<a href="#" class="heroicon" style="position: absolute; top: 4px; left: 4px;">
 				<img src="icons_heroes/BTNPriest.png"; style="width:32px; height:32px; "></a>
 					<div class=herohide style="position: fixed; top: 100px; left: 680px; ">
@@ -2312,6 +2359,7 @@
 					</div>
 			</div>
 			<div style="position: absolute; top: 120px; left: 190px; width:40px; height:40px; ">
+				<div style="position: absolute; top: 4px; left: 4px; height:32px; width:32px; background-color: black; "></div>
 				<a href="#" class="heroicon" style="position: absolute; top: 4px; left: 4px;">
 				<img src="icons_heroes/BTNPriest.png"; style="width:32px; height:32px; "></a>
 					<div class=herohide style="position: fixed; top: 100px; left: 680px; ">
@@ -2420,6 +2468,7 @@
 					</div>
 			</div>
 			<div style="position: absolute; top: 40px; left: 200px; width:40px; height:40px; ">
+				<div style="position: absolute; top: 4px; left: 4px; height:32px; width:32px; background-color: black; "></div>
 				<a href="#" class="heroicon" style="position: absolute; top: 4px; left: 4px;">
 				<img src="icons_heroes/BTNSpellBreaker.png"; style="width:32px; height:32px; "></a>
 					<div class=herohide style="position: fixed; top: 100px; left: 680px; ">
@@ -2528,6 +2577,7 @@
 					</div>
 			</div>
 			<div style="position: absolute; top: 80px; left: 220px; width:40px; height:40px; ">
+				<div style="position: absolute; top: 4px; left: 4px; height:32px; width:32px; background-color: black; "></div>
 				<a href="#" class="heroicon" style="position: absolute; top: 4px; left: 4px;">
 				<img src="icons_heroes/BTNPriest.png"; style="width:32px; height:32px; "></a>
 					<div class=herohide style="position: fixed; top: 100px; left: 680px; ">
@@ -2636,6 +2686,7 @@
 					</div>
 			</div>
 			<div style="position: absolute; top: 40px; left: 240px; width:40px; height:40px; ">
+				<div style="position: absolute; top: 4px; left: 4px; height:32px; width:32px; background-color: black; "></div>
 				<a href="#" class="heroicon" style="position: absolute; top: 4px; left: 4px;">
 				<img src="icons_heroes/BTNPriest.png"; style="width:32px; height:32px; "></a>
 					<div class=herohide style="position: fixed; top: 100px; left: 680px; ">
@@ -2746,6 +2797,7 @@
 		</div>
 		<div style="position: absolute; top: 300px; left: 40px; " >
 			<div style="position: absolute; top: 160px; left: 0px; width:40px; height:40px; ">
+				<div style="position: absolute; top: 4px; left: 4px; height:32px; width:32px; background-color: black; "></div>
 				<a href="#" class="heroicon" style="position: absolute; top: 4px; left: 4px;">
 				<img src="icons_heroes/BTNMilitia.png"; style="width:32px; height:32px; "></a>
 					<div class=herohide style="position: fixed; top: 100px; left: 680px; ">
@@ -2854,6 +2906,7 @@
 					</div>
 			</div>
 			<div style="position: absolute; top: 200px; left: 0px; width:40px; height:40px; ">
+				<div style="position: absolute; top: 4px; left: 4px; height:32px; width:32px; background-color: black; "></div>
 				<a href="#" class="heroicon" style="position: absolute; top: 4px; left: 4px;">
 				<img src="icons_heroes/BTNMilitia.png"; style="width:32px; height:32px; "></a>
 					<div class=herohide style="position: fixed; top: 100px; left: 680px; ">
@@ -2962,6 +3015,7 @@
 					</div>
 			</div>
 			<div style="position: absolute; top: 120px; left: 40px; width:40px; height:40px; ">
+				<div style="position: absolute; top: 4px; left: 4px; height:32px; width:32px; background-color: black; "></div>
 				<a href="#" class="heroicon" style="position: absolute; top: 4px; left: 4px;">
 				<img src="icons_heroes/BTNMilitia.png"; style="width:32px; height:32px; "></a>
 					<div class=herohide style="position: fixed; top: 100px; left: 680px; ">
@@ -3070,6 +3124,7 @@
 					</div>
 			</div>
 			<div style="position: absolute; top: 200px; left: 40px; width:40px; height:40px; ">
+				<div style="position: absolute; top: 4px; left: 4px; height:32px; width:32px; background-color: black; "></div>
 				<a href="#" class="heroicon" style="position: absolute; top: 4px; left: 4px;">
 				<img src="icons_heroes/BTNTheCaptain.png"; style="width:32px; height:32px; "></a>
 					<div class=herohide style="position: fixed; top: 100px; left: 680px; ">
@@ -3178,6 +3233,7 @@
 					</div>
 			</div>
 			<div style="position: absolute; top: 240px; left: 40px; width:40px; height:40px; ">
+				<div style="position: absolute; top: 4px; left: 4px; height:32px; width:32px; background-color: black; "></div>
 				<a href="#" class="heroicon" style="position: absolute; top: 4px; left: 4px;">
 				<img src="icons_heroes/BTNTheCaptain.png"; style="width:32px; height:32px; "></a>
 					<div class=herohide style="position: fixed; top: 100px; left: 680px; ">
@@ -3286,6 +3342,7 @@
 					</div>
 			</div>
 			<div style="position: absolute; top: 80px; left: 70px; width:40px; height:40px; ">
+				<div style="position: absolute; top: 4px; left: 4px; height:32px; width:32px; background-color: black; "></div>
 				<a href="#" class="heroicon" style="position: absolute; top: 4px; left: 4px;">
 				<img src="icons_heroes/BTNMilitia.png"; style="width:32px; height:32px; "></a>
 					<div class=herohide style="position: fixed; top: 100px; left: 680px; ">
@@ -3394,6 +3451,7 @@
 					</div>
 			</div>
 			<div style="position: absolute; top: 160px; left: 70px; width:40px; height:40px; ">
+				<div style="position: absolute; top: 4px; left: 4px; height:32px; width:32px; background-color: black; "></div>
 				<a href="#" class="heroicon" style="position: absolute; top: 4px; left: 4px;">
 				<img src="icons_heroes/BTNTheCaptain.png"; style="width:32px; height:32px; "></a>
 					<div class=herohide style="position: fixed; top: 100px; left: 680px; ">
@@ -3502,6 +3560,7 @@
 					</div>
 			</div>
 			<div style="position: absolute; top: 240px; left: 80px; width:40px; height:40px; ">
+				<div style="position: absolute; top: 4px; left: 4px; height:32px; width:32px; background-color: black; "></div>
 				<a href="#" class="heroicon" style="position: absolute; top: 4px; left: 4px;">
 				<img src="icons_heroes/BTNKnight.png"; style="width:32px; height:32px; "></a>
 					<div class=herohide style="position: fixed; top: 100px; left: 680px; ">
@@ -3610,6 +3669,7 @@
 					</div>
 			</div>
 			<div style="position: absolute; top: 120px; left: 100px; width:40px; height:40px; ">
+				<div style="position: absolute; top: 4px; left: 4px; height:32px; width:32px; background-color: black; "></div>
 				<a href="#" class="heroicon" style="position: absolute; top: 4px; left: 4px;">
 				<img src="icons_heroes/BTNFootman.png"; style="width:32px; height:32px; "></a>
 					<div class=herohide style="position: fixed; top: 100px; left: 680px; ">
@@ -3718,6 +3778,7 @@
 					</div>
 			</div>
 			<div style="position: absolute; top: 200px; left: 100px; width:40px; height:40px; ">
+				<div style="position: absolute; top: 4px; left: 4px; height:32px; width:32px; background-color: black; "></div>
 				<a href="#" class="heroicon" style="position: absolute; top: 4px; left: 4px;">
 				<img src="icons_heroes/BTNKnight.png"; style="width:32px; height:32px; "></a>
 					<div class=herohide style="position: fixed; top: 100px; left: 680px; ">
@@ -3826,6 +3887,7 @@
 					</div>
 			</div>
 			<div style="position: absolute; top: 240px; left: 120px; width:40px; height:40px; ">
+				<div style="position: absolute; top: 4px; left: 4px; height:32px; width:32px; background-color: black; "></div>
 				<a href="#" class="heroicon" style="position: absolute; top: 4px; left: 4px;">
 				<img src="icons_heroes/BTNBanditLord.png"; style="width:32px; height:32px; "></a>
 					<div class=herohide style="position: fixed; top: 100px; left: 680px; ">
@@ -3934,6 +3996,7 @@
 					</div>
 			</div>
 			<div style="position: absolute; top: 160px; left: 130px; width:40px; height:40px; ">
+				<div style="position: absolute; top: 4px; left: 4px; height:32px; width:32px; background-color: black; "></div>
 				<a href="#" class="heroicon" style="position: absolute; top: 4px; left: 4px;">
 				<img src="icons_heroes/BTNFootman.png"; style="width:32px; height:32px; "></a>
 					<div class=herohide style="position: fixed; top: 100px; left: 680px; ">
@@ -4042,6 +4105,7 @@
 					</div>
 			</div>
 			<div style="position: absolute; top: 200px; left: 160px; width:40px; height:40px; ">
+				<div style="position: absolute; top: 4px; left: 4px; height:32px; width:32px; background-color: black; "></div>
 				<a href="#" class="heroicon" style="position: absolute; top: 4px; left: 4px;">
 				<img src="icons_heroes/BTNFootman.png"; style="width:32px; height:32px; "></a>
 					<div class=herohide style="position: fixed; top: 100px; left: 680px; ">
@@ -4150,6 +4214,7 @@
 					</div>
 			</div>
 			<div style="position: absolute; top: 240px; left: 160px; width:40px; height:40px; ">
+				<div style="position: absolute; top: 4px; left: 4px; height:32px; width:32px; background-color: black; "></div>
 				<a href="#" class="heroicon" style="position: absolute; top: 4px; left: 4px;">
 				<img src="icons_heroes/BTNFootman.png"; style="width:32px; height:32px; "></a>
 					<div class=herohide style="position: fixed; top: 100px; left: 680px; ">
@@ -4258,6 +4323,7 @@
 					</div>
 			</div>
 			<div style="position: absolute; top: 280px; left: 200px; width:40px; height:40px; ">
+				<div style="position: absolute; top: 4px; left: 4px; height:32px; width:32px; background-color: black; "></div>
 				<a href="#" class="heroicon" style="position: absolute; top: 4px; left: 4px;">
 				<img src="icons_heroes/BTNDalaranMutant.png"; style="width:32px; height:32px; "></a>
 					<div class=herohide style="position: fixed; top: 100px; left: 680px; ">
@@ -4366,6 +4432,7 @@
 					</div>
 			</div>
 			<div style="position: absolute; top: 240px; left: 220px; width:40px; height:40px; ">
+				<div style="position: absolute; top: 4px; left: 4px; height:32px; width:32px; background-color: black; "></div>
 				<a href="#" class="heroicon" style="position: absolute; top: 4px; left: 4px;">
 				<img src="icons_heroes/BTNDalaranMutant.png"; style="width:32px; height:32px; "></a>
 					<div class=herohide style="position: fixed; top: 100px; left: 680px; ">
@@ -4474,6 +4541,7 @@
 					</div>
 			</div>
 			<div style="position: absolute; top: 280px; left: 240px; width:40px; height:40px; ">
+				<div style="position: absolute; top: 4px; left: 4px; height:32px; width:32px; background-color: black; "></div>
 				<a href="#" class="heroicon" style="position: absolute; top: 4px; left: 4px;">
 				<img src="icons_heroes/BTNFleshGolem.png"; style="width:32px; height:32px; "></a>
 					<div class=herohide style="position: fixed; top: 100px; left: 680px; ">
@@ -4582,6 +4650,7 @@
 					</div>
 			</div>
 			<div style="position: absolute; top: 200px; left: 250px; width:40px; height:40px; ">
+				<div style="position: absolute; top: 4px; left: 4px; height:32px; width:32px; background-color: black; "></div>
 				<a href="#" class="heroicon" style="position: absolute; top: 4px; left: 4px;">
 				<img src="icons_heroes/BTNDalaranMutant.png"; style="width:32px; height:32px; "></a>
 					<div class=herohide style="position: fixed; top: 100px; left: 680px; ">
@@ -4690,6 +4759,7 @@
 					</div>
 			</div>
 			<div style="position: absolute; top: 40px; left: 260px; width:40px; height:40px; ">
+				<div style="position: absolute; top: 4px; left: 4px; height:32px; width:32px; background-color: black; "></div>
 				<a href="#" class="heroicon" style="position: absolute; top: 4px; left: 4px;">
 				<img src="icons_heroes/BTNVillagerMan.png"; style="width:32px; height:32px; "></a>
 					<div class=herohide style="position: fixed; top: 100px; left: 680px; ">
@@ -4798,6 +4868,7 @@
 					</div>
 			</div>
 			<div style="position: absolute; top: 240px; left: 280px; width:40px; height:40px; ">
+				<div style="position: absolute; top: 4px; left: 4px; height:32px; width:32px; background-color: black; "></div>
 				<a href="#" class="heroicon" style="position: absolute; top: 4px; left: 4px;">
 				<img src="icons_heroes/BTNAbomination.png"; style="width:32px; height:32px; "></a>
 					<div class=herohide style="position: fixed; top: 100px; left: 680px; ">
@@ -4906,6 +4977,7 @@
 					</div>
 			</div>
 			<div style="position: absolute; top: 280px; left: 280px; width:40px; height:40px; ">
+				<div style="position: absolute; top: 4px; left: 4px; height:32px; width:32px; background-color: black; "></div>
 				<a href="#" class="heroicon" style="position: absolute; top: 4px; left: 4px;">
 				<img src="icons_heroes/BTNAbomination.png"; style="width:32px; height:32px; "></a>
 					<div class=herohide style="position: fixed; top: 100px; left: 680px; ">
@@ -5014,6 +5086,7 @@
 					</div>
 			</div>
 			<div style="position: absolute; top: 160px; left: 300px; width:40px; height:40px; ">
+				<div style="position: absolute; top: 4px; left: 4px; height:32px; width:32px; background-color: black; "></div>
 				<a href="#" class="heroicon" style="position: absolute; top: 4px; left: 4px;">
 				<img src="icons_heroes/BTNDalaranMutant.png"; style="width:32px; height:32px; "></a>
 					<div class=herohide style="position: fixed; top: 100px; left: 680px; ">
@@ -5122,6 +5195,7 @@
 					</div>
 			</div>
 			<div style="position: absolute; top: 240px; left: 320px; width:40px; height:40px; ">
+				<div style="position: absolute; top: 4px; left: 4px; height:32px; width:32px; background-color: black; "></div>
 				<a href="#" class="heroicon" style="position: absolute; top: 4px; left: 4px;">
 				<img src="icons_heroes/BTNDemoness.png"; style="width:32px; height:32px; "></a>
 					<div class=herohide style="position: fixed; top: 100px; left: 680px; ">
@@ -5230,6 +5304,7 @@
 					</div>
 			</div>
 			<div style="position: absolute; top: 280px; left: 320px; width:40px; height:40px; ">
+				<div style="position: absolute; top: 4px; left: 4px; height:32px; width:32px; background-color: black; "></div>
 				<a href="#" class="heroicon" style="position: absolute; top: 4px; left: 4px;">
 				<img src="icons_heroes/BTNTichondrius.png"; style="width:32px; height:32px; "></a>
 					<div class=herohide style="position: fixed; top: 100px; left: 680px; ">
@@ -5338,6 +5413,7 @@
 					</div>
 			</div>
 			<div style="position: absolute; top: 200px; left: 340px; width:40px; height:40px; ">
+				<div style="position: absolute; top: 4px; left: 4px; height:32px; width:32px; background-color: black; "></div>
 				<a href="#" class="heroicon" style="position: absolute; top: 4px; left: 4px;">
 				<img src="icons_heroes/BTNBlueDemoness.png"; style="width:32px; height:32px; "></a>
 					<div class=herohide style="position: fixed; top: 100px; left: 680px; ">
@@ -5446,6 +5522,7 @@
 					</div>
 			</div>
 			<div style="position: absolute; top: 240px; left: 360px; width:40px; height:40px; ">
+				<div style="position: absolute; top: 4px; left: 4px; height:32px; width:32px; background-color: black; "></div>
 				<a href="#" class="heroicon" style="position: absolute; top: 4px; left: 4px;">
 				<img src="icons_heroes/BTNBlueDemoness.png"; style="width:32px; height:32px; "></a>
 					<div class=herohide style="position: fixed; top: 100px; left: 680px; ">
@@ -5554,6 +5631,7 @@
 					</div>
 			</div>
 			<div style="position: absolute; top: 280px; left: 360px; width:40px; height:40px; ">
+				<div style="position: absolute; top: 4px; left: 4px; height:32px; width:32px; background-color: black; "></div>
 				<a href="#" class="heroicon" style="position: absolute; top: 4px; left: 4px;">
 				<img src="icons_heroes/BTNHeroDreadLord.png"; style="width:32px; height:32px; "></a>
 					<div class=herohide style="position: fixed; top: 100px; left: 680px; ">
@@ -5662,6 +5740,7 @@
 					</div>
 			</div>
 			<div style="position: absolute; top: 120px; left: 380px; width:40px; height:40px; ">
+				<div style="position: absolute; top: 4px; left: 4px; height:32px; width:32px; background-color: black; "></div>
 				<a href="#" class="heroicon" style="position: absolute; top: 4px; left: 4px;">
 				<img src="icons_heroes/BTNDalaranMutant.png"; style="width:32px; height:32px; "></a>
 					<div class=herohide style="position: fixed; top: 100px; left: 680px; ">
@@ -5770,6 +5849,7 @@
 					</div>
 			</div>
 			<div style="position: absolute; top: 240px; left: 400px; width:40px; height:40px; ">
+				<div style="position: absolute; top: 4px; left: 4px; height:32px; width:32px; background-color: black; "></div>
 				<a href="#" class="heroicon" style="position: absolute; top: 4px; left: 4px;">
 				<img src="icons_heroes/BTNSkeletonWarrior.png"; style="width:32px; height:32px; "></a>
 					<div class=herohide style="position: fixed; top: 100px; left: 680px; ">
@@ -5878,6 +5958,7 @@
 					</div>
 			</div>
 			<div style="position: absolute; top: 200px; left: 420px; width:40px; height:40px; ">
+				<div style="position: absolute; top: 4px; left: 4px; height:32px; width:32px; background-color: black; "></div>
 				<a href="#" class="heroicon" style="position: absolute; top: 4px; left: 4px;">
 				<img src="icons_heroes/BTNSkeletonWarrior.png"; style="width:32px; height:32px; "></a>
 					<div class=herohide style="position: fixed; top: 100px; left: 680px; ">
@@ -5986,6 +6067,7 @@
 					</div>
 			</div>
 			<div style="position: absolute; top: 240px; left: 440px; width:40px; height:40px; ">
+				<div style="position: absolute; top: 4px; left: 4px; height:32px; width:32px; background-color: black; "></div>
 				<a href="#" class="heroicon" style="position: absolute; top: 4px; left: 4px;">
 				<img src="icons_heroes/BTNSkeletalOrc.png"; style="width:32px; height:32px; "></a>
 					<div class=herohide style="position: fixed; top: 100px; left: 680px; ">
@@ -6094,6 +6176,7 @@
 					</div>
 			</div>
 			<div style="position: absolute; top: 160px; left: 450px; width:40px; height:40px; ">
+				<div style="position: absolute; top: 4px; left: 4px; height:32px; width:32px; background-color: black; "></div>
 				<a href="#" class="heroicon" style="position: absolute; top: 4px; left: 4px;">
 				<img src="icons_heroes/BTNSkeletonWarrior.png"; style="width:32px; height:32px; "></a>
 					<div class=herohide style="position: fixed; top: 100px; left: 680px; ">
@@ -6202,6 +6285,7 @@
 					</div>
 			</div>
 			<div style="position: absolute; top: 80px; left: 460px; width:40px; height:40px; ">
+				<div style="position: absolute; top: 4px; left: 4px; height:32px; width:32px; background-color: black; "></div>
 				<a href="#" class="heroicon" style="position: absolute; top: 4px; left: 4px;">
 				<img src="icons_heroes/BTNVillagerMan.png"; style="width:32px; height:32px; "></a>
 					<div class=herohide style="position: fixed; top: 100px; left: 680px; ">
@@ -6310,6 +6394,7 @@
 					</div>
 			</div>
 			<div style="position: absolute; top: 200px; left: 480px; width:40px; height:40px; ">
+				<div style="position: absolute; top: 4px; left: 4px; height:32px; width:32px; background-color: black; "></div>
 				<a href="#" class="heroicon" style="position: absolute; top: 4px; left: 4px;">
 				<img src="icons_heroes/BTNSkeletonMage.png"; style="width:32px; height:32px; "></a>
 					<div class=herohide style="position: fixed; top: 100px; left: 680px; ">
@@ -6418,6 +6503,7 @@
 					</div>
 			</div>
 			<div style="position: absolute; top: 240px; left: 480px; width:40px; height:40px; ">
+				<div style="position: absolute; top: 4px; left: 4px; height:32px; width:32px; background-color: black; "></div>
 				<a href="#" class="heroicon" style="position: absolute; top: 4px; left: 4px;">
 				<img src="icons_heroes/BTNSkeletonMage.png"; style="width:32px; height:32px; "></a>
 					<div class=herohide style="position: fixed; top: 100px; left: 680px; ">
@@ -6526,6 +6612,7 @@
 					</div>
 			</div>
 			<div style="position: absolute; top: 160px; left: 520px; width:40px; height:40px; ">
+				<div style="position: absolute; top: 4px; left: 4px; height:32px; width:32px; background-color: black; "></div>
 				<a href="#" class="heroicon" style="position: absolute; top: 4px; left: 4px;">
 				<img src="icons_heroes/BTNVillagerMan.png"; style="width:32px; height:32px; "></a>
 					<div class=herohide style="position: fixed; top: 100px; left: 680px; ">
@@ -6634,6 +6721,7 @@
 					</div>
 			</div>
 			<div style="position: absolute; top: 120px; left: 540px; width:40px; height:40px; ">
+				<div style="position: absolute; top: 4px; left: 4px; height:32px; width:32px; background-color: black; "></div>
 				<a href="#" class="heroicon" style="position: absolute; top: 4px; left: 4px;">
 				<img src="icons_heroes/BTNVillagerMan.png"; style="width:32px; height:32px; "></a>
 					<div class=herohide style="position: fixed; top: 100px; left: 680px; ">
@@ -6742,6 +6830,7 @@
 					</div>
 			</div>
 			<div style="position: absolute; top: 160px; left: 560px; width:40px; height:40px; ">
+				<div style="position: absolute; top: 4px; left: 4px; height:32px; width:32px; background-color: black; "></div>
 				<a href="#" class="heroicon" style="position: absolute; top: 4px; left: 4px;">
 				<img src="icons_heroes/BTNVillagerMan1.png"; style="width:32px; height:32px; "></a>
 					<div class=herohide style="position: fixed; top: 100px; left: 680px; ">
